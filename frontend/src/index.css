@@ -12,7 +12,7 @@ ruby, section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  color: #000000;
+  color: #ffffff;
   font: inherit;
   vertical-align: baseline;
 }
@@ -30,16 +30,6 @@ textarea:focus {
 }
 textarea {
   height: 150px;
-}
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  padding: 8px 16px;
-  background-color: #060606;
-  border-bottom: 1px solid #000000;
 }
 h1 {
   margin: 0;
@@ -89,6 +79,15 @@ h6 {
   vertical-align: baseline;
 }
 button {
+  width: 120px;
+  height: 50px;
+  padding: 16px 8px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
   cursor: pointer;
 }
 /*prettier-ignore*/
@@ -122,11 +121,13 @@ th {
   font-weight: bold;
   text-align: -internal-center;
   font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
 }
 td {
   display: table-cell;
   vertical-align: inherit;
   font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
   border-right: 1px solid #000000;
   border-left: 1px solid #000000;
 }
@@ -152,6 +153,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #190130;
+  border-bottom: 1px solid #000000;
+}
 /*prettier-ignore*/
 html, body, #root {
   box-sizing: border-box;
@@ -172,6 +186,7 @@ html, body, #root {
 *::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 img {
   width: 100%;
@@ -187,6 +202,58 @@ img {
 .d-align-center {
   align-items: center;
 }
+.d-inline {
+  display: inline;
+}
 .m-auto {
   margin: auto;
+}
+
+/*========================= view ========================*/
+.view {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  background-color: #260145;
+}
+.view-container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  padding: 45px;
+  background-color: #260145;
+}
+
+/*======================== header =======================*/
+header h2 {
+  color: #734D94;
+}
+
+/*======================== button =======================*/
+.purple-btn {
+  background-color: #734D94;
+}
+.green-btn {
+  background-color: #008101;
+}
+
+/*========================= link ========================*/
+.link-btn {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  padding: 16px 8px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.green-link-btn {
+  background-color: #008101;
 }

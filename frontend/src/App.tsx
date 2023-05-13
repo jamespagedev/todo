@@ -1,11 +1,8 @@
 import React from 'react';
+import { Tasks } from './views';
 
-function App() {
-  return (
-    <div>
-      <h1>Start Coding...</h1>
-    </div>
-  );
+function App(): JSX.Element {
+  return <Tasks />;
 }
 
 export default App;
