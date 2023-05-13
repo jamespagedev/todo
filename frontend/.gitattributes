@@ -1,0 +1,18 @@
+# By default, treat everything in the repository as a text file that should
+# have LF line endings
+* text eol=lf
+
+# These are all binary files. Don't diff or merge them.
+*.exe binary
+*.eot binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.jpg binary
+*.otf binary
+*.png binary
+*.PNG binary
+*.svg binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

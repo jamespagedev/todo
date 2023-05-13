@@ -21,6 +21,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+/coverage
 *.lcov
 
 # nyc test coverage
@@ -40,7 +41,10 @@ build/Release
 
 # Dependency directories
 node_modules/
+/node_modules
 jspm_packages/
+/.pnp
+.pnp.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -73,6 +77,11 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
 .env.development.local
 .env.test.local
