@@ -254,6 +254,13 @@ header h2 {
   text-decoration: none;
   cursor: pointer;
 }
+.purple-link-btn {
+  background-color: #734D94;
+}
 .green-link-btn {
   background-color: #008101;
+}
+.gray-cancel-btn {
+  background-color: #cdcdcd;
+  color: #734d94;
 }

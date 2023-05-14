@@ -1,18 +1,18 @@
 import React from 'react';
-import { GreenLinkBtn, PurpleBtn, View } from 'src/components';
-import { headerHeight } from 'src/utils';
+import { GreenLinkBtn, PurpleLinkBtn, View } from 'src/components';
+import { frontendLinks, headerHeight } from 'src/utils';
 
 //interface Props {}
 
-export default function Tasks(): JSX.Element {
+export default function ViewTasks(): JSX.Element {
   return (
     <View>
       <>
         <header>
           <h2>MY TO DO LIST</h2>
           <div className="d-inline">
-            <PurpleBtn styles={{ marginRight: '20px' }} title="Sort By" onClick={() => console.log('ToDo')} />
-            <GreenLinkBtn to="/new-task" title="New Task" />
+            <PurpleLinkBtn to={frontendLinks.sortTasks} title="Sort By" styles={{ marginRight: '20px' }} />
+            <GreenLinkBtn to={frontendLinks.newTask} title="New Task" />
           </div>
         </header>
         <div style={{ height: `${headerHeight}px` }} />

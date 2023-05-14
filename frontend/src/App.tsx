@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tasks } from './views';
+import { Routes } from './routes';
 
 function App(): JSX.Element {
-  return <Tasks />;
+  return <Routes />;
 }
 
 export default App;
